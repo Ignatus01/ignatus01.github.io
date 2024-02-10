@@ -6,9 +6,13 @@ h1 {
 p {
 
 
-
-
 }
+
+h1 + p {
+
+    font-size: 200%;
+}
+
 
 .special {
 
@@ -24,7 +28,7 @@ a:link {
 
 a:visited {
 
-    color:green
+    color: black
 }
 
 a:hover {
