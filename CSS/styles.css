@@ -1,3 +1,4 @@
+
 @import url(https://fonts.googleapis.com/css?family=Montserrat:wght@100;200;300;400;500;600;700;800;900display=swap);
 
 * {
@@ -102,8 +103,182 @@ nav.co {
     margin-right: 10px;
 }
 
+.accueil{
+
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.films {
+
+    color: white;
+    text-decoration: none;
+}
+
+.recherche {
+
+    color:white;
+    text-decoration: none;
+}
+
+.seconnecter {
+
+    color:white;
+    text-decoration: none;
+}
+
+/* services */
+
+.services {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px;
+    margin-top: 60px;
+
+}
+
+.service-item {
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.delivery-icon {
+    font-size: 50px;
+    color:rgb(0, 0, 71);
+}
+
+.service-p {
+
+    font-weight: bold;
+    width: 200px;
+    text-align: center;
+
+}
+
+/*  Recommandations */
+
+.section-title {
+    font-size: 35px;
+    font-weight: 800;
+    position: relative;
+    height: 50px;
+    
+}
+
+.section-title::before {
+    content: "";
+    position: absolute;
+    background-color: rgb(0, 0, 71);
+    width: 55px;
+    height: 8px;
+    bottom: 0;
+
+}
+
+.recommandation-film {
+
+    min-height: 500px;
+    background-color: brown;
+    display: flex;
+    flex-wrap: wrap;
+
+
+}
+
+.recommandation {
+    margin: 10px;
 
 
 
+}
 
+
+.film-box {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    min-width: 350px;
+    height: 525px;
+    flex: 1;
+
+}
+
+.film1 {
+    background-image: url(../medias/Affiches_films/image_film_mrjones.jpg);
+
+
+}
+
+.film2 {
+    background-image: url(../medias/Affiches_films/image_film_pulpfiction.jpg);
+
+
+}
+
+.film3 {
+    background-image: url(../medias/Affiches_films/image_film_scarface.jpg);
+
+
+}
+
+.film4 {
+    background-image: url(../medias/Affiches_films/image_film_vice.jpg);
+
+
+
+}
+
+.film-box-details {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background-color: rgba(231, 231, 231, 0.842);
+    padding: 5px 20px;
+
+}
+
+.film-name {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 3px;
+}
+.film-fiche {
+    color: rgb(0, 0, 71);
+    font-size: 14px;
+    line-height: 3px;
+    font-weight: bold;
+
+}
+
+/* footer */
+
+.copyright {
+
+    color: white;
+
+}
+
+.cgv {
+    
+
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    
+
+}
+
+footer {
+    
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: px px;
+    font-weight: 600;
+
+
+}
 
