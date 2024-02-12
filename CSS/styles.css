@@ -10,6 +10,7 @@
 body {
 
     margin: 0 auto;
+
 }
 
 /* tete de page */
@@ -24,7 +25,7 @@ header.header {
 
 header.header img {
 
-    width: 150px;
+    width: 9em;
 }
 
 section.top-page {
@@ -32,6 +33,7 @@ section.top-page {
     background-size: cover;
     height: 80vh;
     padding: 1px;
+
 
 }
 
@@ -45,6 +47,8 @@ section.top-page {
 
 .landing-page {
 
+    display: flex;
+    flex-wrap: wrap;
     
 
 }
@@ -53,9 +57,13 @@ section.top-page {
 .big-title {
 
     display: flex;
+    flex-direction: row;
+    justify-content:center;
     color: white;
-    font-size: 80px;
-    background-color: black;
+    font-size: 3em;
+    background-color: rgba(0, 0, 0, 0.651);
+
+    
 
 
 }
@@ -78,7 +86,8 @@ nav.nav {
     justify-content: space-between;
     list-style: none;
     width: 230px;
-    margin-left: 30px;
+    margin-left: 2em;
+    flex-wrap: wrap;
     
 }
 
@@ -98,7 +107,12 @@ nav.co {
     display: flex;
     list-style: none;
     margin-left: auto;
-    margin-right: 10px;
+    margin-right: 1em;
+}
+
+.nav {
+
+    font-size: 0.9em;
 }
 
 .accueil{
@@ -123,15 +137,30 @@ nav.co {
 
     color:white;
     text-decoration: none;
+    font-size: 0.9em;
 }
 
 /* services */
 
+@media screen and (max-width: 500px) {
+
+   .services-items {
+
+    margin-top: 2em;
+    margin-bottom: 2em;
+    display: flex;
+    flex-direction: column;
+
+ 
+}
+}
+
 .services {
     display: flex;
     justify-content: space-evenly;
-    margin: 20px;
-    margin-top: 60px;
+    margin: 3em;
+    margin-top: 4em;
+    flex-wrap: wrap;
 
 }
 
@@ -158,98 +187,133 @@ nav.co {
 
 /*  Recommandations */
 
-.section-title {
-    font-size: 35px;
-    font-weight: 800;
-    position: relative;
-    height: 50px;
+
     
-}
-
-.section-title::before {
-    content: "";
-    position: absolute;
-    background-color: rgb(0, 0, 71);
-    width: 55px;
-    height: 8px;
-    bottom: 0;
-
-}
-
-.recommandation-film {
-
-    min-height: 500px;
-    background-color: brown;
-    display: flex;
-    flex-wrap: wrap;
-
-
-}
 
 .recommandation {
-    margin: 10px;
 
-
-
+min-height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+padding: 2em;
 }
 
+.box {
 
-.film-box {
+    margin: 4em 1.5em;
+    text-align: center;
     position: relative;
-    background-size: cover;
-    background-position: center;
-    min-width: 350px;
-    height: 525px;
-    flex: 1;
+}
+
+.box-header {
+
+    width: 21em;
+    height: 29em;
+    background: url(../medias/Affiches_films/image_film_mrjones.jpg);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
-.film1 {
-    background-image: url(../medias/Affiches_films/image_film_mrjones.jpg);
+.shadow-box {
 
-
+    filter: drop-shadow(0 1em 1em rgba(5, 5, 0.5, 0.5));
 }
 
-.film2 {
-    background-image: url(../medias/Affiches_films/image_film_pulpfiction.jpg);
+.envie {
 
-
-}
-
-.film3 {
-    background-image: url(../medias/Affiches_films/image_film_scarface.jpg);
-
-
-}
-
-.film4 {
-    background-image: url(../medias/Affiches_films/image_film_vice.jpg);
-
-
-
-}
-
-.film-box-details {
+    background: rgb(0, 0, 71);
+    width: 3em;
+    height: 2em;
     position: absolute;
-    width: 100%;
-    bottom: 0;
-    background-color: rgba(231, 231, 231, 0.842);
-    padding: 5px 20px;
+    top: -2em;
+    left: 15%;
+    transform: translate(-50%);
+    padding: 1em 1.2em 1.2em 1.2em;
+    border-radius: 20%;
+    color: beige;
+    z-index: 1;
 
 }
 
-.film-name {
-    font-size: 22px;
-    font-weight: 600;
-    line-height: 3px;
-}
-.film-fiche {
-    color: rgb(0, 0, 71);
-    font-size: 14px;
-    line-height: 3px;
+.envie {
+
+    font-size: 0.9em;
     font-weight: bold;
 
 }
+
+.envie small { 
+
+    font-weight: bold;
+}
+
+
+
+.encart1 {
+
+  
+    
+}
+
+.encart1 p {
+
+    
+
+}
+
+.box-body {
+
+    
+    width: 20em;
+    height: 8em;
+    border-color: black;
+    border-width: 5px;
+    border-style: solid;
+    margin-top: 1em;
+    padding-top: 1em;
+    padding-left: em;
+    background-color: rgb(231, 231, 231);
+    border-radius: 10px;
+    
+    
+
+
+}
+
+.box-body h2 {
+
+    font-weight: bold;
+    margin: 0, 0, 0, 0;
+    margin-top: 1px;
+    
+
+}
+
+.box-body p {
+
+    font-weight: bold;
+}
+
+.box ul {
+
+    font-weight: bold;
+    list-style: none;
+    padding: 6px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+
+
+
+
+
 
 /* footer */
 
@@ -273,9 +337,11 @@ footer {
     background-color: black;
     display: flex;
     justify-content: space-between;
+    height: 5em;
     align-items: center;
+    margin: 5px 5px;
+    padding: 2em, 2em, 2em, 2em;
     font-weight: 600;
-
 
 }
 
