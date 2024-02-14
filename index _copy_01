@@ -4,40 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CoupliMovies</title>
-    <link rel="stylesheet" href="/CSS/styles.css">
+    <link rel="stylesheet" href="CSS/styles.css">
     <script src="https://kit.fontawesome.com/5246c339e8.js"></script>
 </head>
 <body>
     <section class="top-page">
-        <nav class="navbar">
-            <a href="#" class="logo">CoupliMovies</a>
-            <div class="nav-links" id="nav-links-01">
-                <ul>
-                    <li class="active" a href="#">Accueil</a></li>
-                    <li><a href="#">Films</a></li>
-                    <li><a href="#">Series</a></li>
-                    <li><a href="#">Recherche</a></li>
-                    <li><a href="#">Fiches</a></li>
-                    <li><a href="#">Se connecter</a></li>
-                </ul>
-            </div>
-            <img src="./medias/menu-btn.png" alt="menu hamburger"
-            class="menu-hamburger">
-        </nav>
-       <header> </header>
-    </section>
-    <script>
- const menuHamburger = document.querySelector(".menu-hamburger")
-        const navLinks = document.querySelector(".nav-links")
- 
-        menuHamburger.addEventListener('click',()=>{
-        navLinks.classList.toggle('mobile-menu')
-        })
-
-    </script>
-    <section class="services-part">
-        <div class="title-services-part">
-            <h1>Avec CoupliMovies tu peux : </h1>
+        <header class="header">
+            <img src="medias/logo_couplimovies/LOGO_couplimovie_large_fond_sombre_01.png" alt="Logo du site">
+            <nav  class="nav">
+                <li><a href="" class="accueil">Accueil</a></li>
+                <li><a href="" class="films">Films</a></li>
+                <li><a href="" class="recherche">Recherche</a></li>
+            </nav>
+            <nav class="co">
+                <li><a href=""class="seconnecter">Se connecter</a></li>
+            </nav>
+        </header>
+        <div class="landing-page">
+            <h1 class="big-title">Cultivons le jardin du cinéma.</h1>
+            <a class="scroll-down" href="">Scroll<i class="fa-solid fa-chevron-down"></i> </a>
         </div>
     </section>
     <section class="services">
@@ -53,13 +38,8 @@
             <i class="fa-solid fa-heart delivery-icon"></i>
             <p class="service-p">Partager vos recommandations avec vos amis</p>
         </div>
-    </section>
+    </section> 
 
-    <section class="recommandation-part">
-        <div class="title-recommandation-part">
-            <h1>Les recommandations de CoupliMovies :</h1>
-        </div>
-    </section>
     <section class="recommandation">
         <div class="box">
             <div class="envie">
@@ -133,32 +113,9 @@
 </ul>
 </div>
 </div>
-</div>
-<div class="box">
-    <div class="envie">
-        <i class="fa-solid fa-check"></i>
-<small>ajouter</small>
-    </div>
-<div class="shadow-box">
-    <div class="box-header">
-        <div class="encart">
-            <h1></h1>
-            <P></P>
-        </div>
-    </div>
-</div>
-<div class="box-body">
-    <h2>Mr Jones</h2>
-    <p>Film documentaire</p>
-<ul>
-    <li>
-        <i class="fa-regular fa-file"></i>
-        <span>Voir la fiche</span>
-    </li>
-</ul>
-</div>
-</div>
 
+
+</div>
 </section>
     <footer>
         <p class="copyright">&copy; 2024 - CoupliMovies - Tous droits réservés</p>
